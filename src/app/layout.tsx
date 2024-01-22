@@ -3,6 +3,7 @@ import "./globals.css";
 import { GeistMono } from "geist/font/mono";
 import PageLayout from "@/components/common/page-layout";
 import Providers from "./providers";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "enkv - Elijah Posnikov",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Providers>
           <PageLayout>{children}</PageLayout>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
