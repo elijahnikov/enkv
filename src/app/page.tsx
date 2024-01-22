@@ -1,4 +1,5 @@
 import { Container } from "@/components/common/page-layout";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,12 +8,23 @@ export default function Home() {
       <div className="flex items-center justify-between">
         <div className="h-48 flex items-center">
           <div>
-            <h1 className="font-bold text-2xl">Elijah Posnikov</h1>
+            <h1 className="font-bold text-2xl mb-2">Elijah Posnikov</h1>
             <p className="max-w-[400px]">
-              Hey there!👋🏻 {`I'm`} a software developer with a keen eye for
+              Hey there 👋🏻! {`I'm`} a software developer with a keen eye for
               detail and a passion for turning awesome ideas into sleek, user
               friendly software solutions.
             </p>
+            <div className="mt-5">
+              <p>
+                I develop things as a Software Developer at{" "}
+                <a
+                  href="https://www.airfinity.com/"
+                  className="text-sm font-semibold underline"
+                >
+                  Airfinity
+                </a>
+              </p>
+            </div>
           </div>
         </div>
         <div className="w-[200px] items-center flex h-full justify-center">
