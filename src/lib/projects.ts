@@ -1,4 +1,4 @@
-type ProjectsType = {
+export type ProjectsType = {
   name: string;
   description: string;
   githubUrl: string;

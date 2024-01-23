@@ -6,6 +6,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "../ui/hover-card";
+import { cn } from "@/lib/utils";
 
 export default function StackCard({
   name,
@@ -35,17 +36,29 @@ export default function StackCard({
 export function ExtraStackCard({
   stack,
   length,
+  small = false,
 }: {
   stack: [string, string][];
   length: number;
+  small?: boolean;
 }) {
   return (
     <HoverCard>
       <HoverCardTrigger>
         <Card className="h-full hover:scale-105 transition dark:bg-gray-800 dark:border-slate-700 transition-all duration-100 transform items-center justify-center flex">
           <div className="flex text-slate-700 dark:text-slate-200">
-            <Plus size={20} className="mt-[14px]" />
-            <h1 className="text-[32px] font-semibold">{length}</h1>
+            <Plus
+              size={small ? 14 : 20}
+              className={cn(small ? "mt-[5px]" : "mt-[14px]")}
+            />
+            <h1
+              className={cn(
+                small ? "text-[16px]" : "text-[32px]",
+                "font-semibold"
+              )}
+            >
+              {length}
+            </h1>
           </div>
         </Card>
       </HoverCardTrigger>

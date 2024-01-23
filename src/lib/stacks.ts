@@ -26,7 +26,7 @@ export const stacks: StacksType = {
     AWS: "https://cdn.svgporn.com/logos/aws.svg",
     Upstash: "https://cdn.svgporn.com/logos/upstash-icon.svg",
     Supabase: "https://cdn.svgporn.com/logos/supabase-icon.svg",
-    PlanetScale: "https://cdn.svgporn.com/logos/planetscale.svg",
+    Planetscale: "https://cdn.svgporn.com/logos/planetscale.svg",
   },
   "tools and frameworks": {
     React: "https://cdn.svgporn.com/logos/react.svg",
