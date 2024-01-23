@@ -37,9 +37,11 @@ export const stacks: StacksType = {
     Flask: "https://cdn.svgporn.com/logos/flask.svg",
     tRPC: "https://cdn.svgporn.com/logos/trpc.svg",
     "React Query": "https://cdn.svgporn.com/logos/react-query-icon.svg",
-    Webworkers: "",
     Tailwind: "https://cdn.svgporn.com/logos/tailwindcss-icon.svg",
     "D3.js": "https://cdn.svgporn.com/logos/d3.svg",
+    Apollo: "https://cdn.svgporn.com/logos/apollostack.svg",
+    "Express.js":
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
   },
   testing: {
     Cypress: "https://cdn.svgporn.com/logos/cypress-icon.svg",
@@ -47,3 +49,13 @@ export const stacks: StacksType = {
     Storybook: "https://cdn.svgporn.com/logos/storybook-icon.svg",
   },
 };
+
+export const flattenedStacks = Object.entries(stacks).reduce(
+  (acc: Record<string, string>, [category, childObject]) => {
+    Object.entries(childObject).forEach(([key, value]) => {
+      acc[key] = value;
+    });
+    return acc;
+  },
+  {}
+);

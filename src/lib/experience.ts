@@ -17,7 +17,7 @@ export const experience: Array<ExperienceType> = [
       `Led the initiative and development to transition from third-party software to an internally developed visualization
     solution, enhancing developer-friendliness, performance, and user experience. This strategic shift is expected to result in
     substantial cost and time efficiencies, delivering considerable value to the company.`,
-      `Collaborating closely with product managers and analysts to expand and refine an internal SaaS tool, ensuring it delivers enhanced value to customers/clients.`,
+      `Collaborating closely with product managers and analysts to expand and refine Airfinity's SaaS tool, ensuring it delivers enhanced value to customers/clients.`,
       `Creating complex, reusable and efficient React UI components, enhancing UI/UX and contributing to improved application scalability and performance.`,
     ],
     stack: [

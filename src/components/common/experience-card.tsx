@@ -10,9 +10,9 @@ export default function ExperienceCard({
 }) {
   const { company, duration, location, title, website } = experience;
   return (
-    <li className="mb-10 ms-4">
+    <li className=" ms-4">
       <div className="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-      <div className="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-500">
+      <div className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-400">
         {duration}
       </div>
       <Card className="p-5 mt-2 dark:bg-gray-800 dark:border-slate-700">

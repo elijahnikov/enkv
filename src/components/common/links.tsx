@@ -52,13 +52,14 @@ export default function Links() {
   }, [theme]);
 
   return (
-    <div className="flex mt-5 mx-auto justify-center gap-5">
+    <div className="flex mt-10 mx-auto justify-center gap-5">
       {links.map(({ href, icon, name, render }, index) => (
         <TooltipProvider key={index}>
           <Tooltip>
             <TooltipTrigger>
               {href && (
                 <Link
+                  target="_blank"
                   className={buttonVariants({ variant: "outline" })}
                   href={href}
                 >
