@@ -52,7 +52,7 @@ export default function Links() {
   }, [theme]);
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 flex mb-5 mt-10 mx-auto sm:w-[60%s] md:w-[70%] lg:w-[60%] justify-center">
+    <div className="grid  grid-cols-3 sm:grid-cols-6 gap-2 flex mb-5 mt-10 mx-auto sm:w-[60%s] md:w-[70%] lg:w-[60%] justify-center">
       {links.map(({ href, icon, name, render }, index) => (
         <TooltipProvider key={index}>
           <Tooltip>

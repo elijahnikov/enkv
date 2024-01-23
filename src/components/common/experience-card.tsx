@@ -17,7 +17,7 @@ export default function ExperienceCard({
       </div>
       <Card className="p-5 mt-2 dark:bg-gray-800 dark:border-slate-700">
         <div className="flex justify-between">
-          <div className="flex">
+          <div className="block sm:flex">
             <Link
               href={website}
               target="_blank"
@@ -25,10 +25,10 @@ export default function ExperienceCard({
             >
               {company}
             </Link>
-            <p className="font-bold mt-1 mx-1">-</p>
+            <p className="sm:flex hidden font-bold mt-1 mx-1">-</p>
             <h3 className="text-sm mt-[5px]">{title}</h3>
           </div>
-          <h3 className="text-xs mt-[5px] bg-green-100 px-2 py-1 dark:bg-slate-900 rounded-lg">
+          <h3 className="text-xs mt-[5px] h-max bg-green-100 px-2 py-1 dark:bg-slate-900 rounded-lg">
             {location}
           </h3>
         </div>
