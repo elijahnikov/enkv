@@ -6,7 +6,7 @@ const sections = [
 ] as const;
 type SectionsIndex = (typeof sections)[number];
 
-type SectionsObjType = Record<string, string | string>;
+export type SectionsObjType = Record<string, string>;
 type StacksType = Record<SectionsIndex, SectionsObjType>;
 
 export const stacks: StacksType = {
@@ -15,7 +15,8 @@ export const stacks: StacksType = {
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     JavaScript:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    SQL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    PostgreSQL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     Python:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     Java: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
@@ -33,11 +34,12 @@ export const stacks: StacksType = {
     "Node.js": "https://cdn.svgporn.com/logos/nodejs-icon.svg",
     GraphQL: "https://cdn.svgporn.com/logos/graphql.svg",
     Prisma: "https://cdn.svgporn.com/logos/prisma.svg",
+    Flask: "https://cdn.svgporn.com/logos/flask.svg",
     tRPC: "https://cdn.svgporn.com/logos/trpc.svg",
     "React Query": "https://cdn.svgporn.com/logos/react-query-icon.svg",
+    Webworkers: "",
     Tailwind: "https://cdn.svgporn.com/logos/tailwindcss-icon.svg",
     "D3.js": "https://cdn.svgporn.com/logos/d3.svg",
-    Webworkers: "",
   },
   testing: {
     Cypress: "https://cdn.svgporn.com/logos/cypress-icon.svg",

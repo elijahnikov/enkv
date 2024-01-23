@@ -1,8 +1,9 @@
 import StackCard from "@/components/common/stack-card";
-import { stacks } from "@/lib/maps";
+import { stacks } from "@/lib/stacks";
 import _ from "lodash";
 
 export default function StackPage() {
+  console.log(1);
   return (
     <div>
       {Object.entries(stacks).map(([category, items]) => (
