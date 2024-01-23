@@ -52,7 +52,7 @@ export function ExtraStackCard({
     return (
       <Popover>
         <PopoverTrigger>
-          <Card className="h-full hover:scale-105 transition dark:bg-gray-800 dark:border-slate-700 transition-all duration-100 transform items-center justify-center flex">
+          <Card className="dark:bg-gray-800 h-full hover:scale-105 transition dark:bg-gray-800 dark:border-slate-700 transition-all duration-100 transform items-center justify-center flex">
             <div className="flex text-slate-700 dark:text-slate-200">
               <Plus
                 size={small ? 14 : 20}
@@ -92,7 +92,7 @@ export function ExtraStackCard({
   return (
     <HoverCard>
       <HoverCardTrigger>
-        <Card className="h-full hover:scale-105 transition dark:bg-gray-800 dark:border-slate-700 transition-all duration-100 transform items-center justify-center flex">
+        <Card className="dark:bg-gray-800 h-full hover:scale-105 transition dark:bg-gray-800 dark:border-slate-700 transition-all duration-100 transform items-center justify-center flex">
           <div className="flex text-slate-700 dark:text-slate-200">
             <Plus
               size={small ? 14 : 20}
@@ -111,7 +111,10 @@ export function ExtraStackCard({
       </HoverCardTrigger>
       <HoverCardContent className="max-w-[200px] grid grid-cols-1 gap-2">
         {stack.map(([name, src], index) => (
-          <Card key={index} className="p-2 items-left space-x-2 flex">
+          <Card
+            key={index}
+            className="dark:bg-gray-800 p-2 items-left space-x-2 flex"
+          >
             {src && (
               <Image
                 width={20}

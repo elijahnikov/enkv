@@ -57,7 +57,7 @@ export default function ProjectCard({ project }: { project: ProjectsType }) {
         {stack.slice(0, 4).map((stk, index) => (
           <Card
             key={index}
-            className="hover:scale-105 transition-all duration-100 transform transition mx-auto items-center p-1 flex text-center justify-center"
+            className="dark:bg-gray-800 hover:scale-105 transition-all duration-100 transform transition mx-auto items-center p-1 flex text-center justify-center"
           >
             <Image
               width={25}
